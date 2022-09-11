@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  font-family: "Inter", sans-serif;
+  padding-top: 3.3rem;
+}
+
+.navigation {
+  display: flex;
+  margin-bottom: 6.4rem;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: #35454b;
+  color: #e9ecef;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 2px;
+  padding: 1.8rem;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #546c75;
+  color: white;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("ig/hero-img.png");
+  background-size: cover;
+  padding-bottom: 6rem;
+  gap: 4.8rem;
+  margin-bottom: 6rem;
+  max-width: 100%;
+}
+
+.hero-section h1 {
+  font-size: 12.8rem;
+  color: #181f24;
+  font-weight: 900;
+  letter-spacing: -8px;
+}
+
+.hero-section p {
+  background-image: none;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  max-width: 50vw;
+}
+
+.kiez {
+  align-self: flex-start;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.main-content-box {
+  display: grid;
+  row-gap: 8rem;
+  justify-items: center;
+}
+
+.section-item {
+  padding: 4.2rem;
+  display: grid;
+  max-width: 70%;
+  grid-template-columns: 1fr auto;
+  column-gap: 4.2rem;
+  border-radius: 2px;
+  box-shadow: 0px 1px 40px 0px rgba(202, 205, 207, 0.5);
+}
+
+.section-item img {
+  border-radius: 2px;
+  max-width: 100%;
+  align-self: center;
+}
+
+.section-item h1 {
+  color: #181f24;
+  letter-spacing: -2px;
+  font-size: 8rem;
+  font-weight: 800;
+  padding-bottom: 1.6rem;
+}
+
+.section-item-text p {
+  font-size: 1.8rem;
+  color: #181f24;
+  letter-spacing: 0.8px;
+  line-height: 1.75;
+  flex-grow: 0 1 auto;
+  padding-bottom: 4.2rem;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 45px;
+}
