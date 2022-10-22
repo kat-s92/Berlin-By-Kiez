@@ -224,4 +224,7 @@ footer {
     letter-spacing: -3px;
     font-size: 7.6rem;
   }
+  .hero-section p {
+    max-width: 80vw;
+  }
 }
