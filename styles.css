@@ -217,3 +217,11 @@ footer {
     display: inline;
   }
 }
+
+/*BELOW 320 [20em*16px] (Landscape Tablet Screen)*/
+@media (max-width: 20em) {
+  .hero-section h1 {
+    letter-spacing: -3px;
+    font-size: 7.6rem;
+  }
+}
