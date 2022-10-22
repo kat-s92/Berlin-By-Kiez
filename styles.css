@@ -234,4 +234,7 @@ footer {
   .hero-section p {
     max-width: 80vw;
   }
+  .hero-section {
+    gap: 3.2rem;
+  }
 }
