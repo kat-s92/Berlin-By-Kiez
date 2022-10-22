@@ -8,16 +8,30 @@ html {
   font-size: 62.5%;
 }
 
-.container {
+body {
   font-family: "Inter", sans-serif;
   padding-top: 3.3rem;
 }
 
-.navigation {
-  display: flex;
-  margin-bottom: 6.4rem;
-  justify-content: center;
-  gap: 0.1rem;
+/*REUSABLE*/
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .btn {
@@ -37,16 +51,33 @@ html {
   color: white;
 }
 
-.hero-section {
+.secondary-heading {
+  color: #181f24;
+  letter-spacing: -2px;
+  font-size: 8rem;
+  font-weight: 800;
+  padding-bottom: 1.6rem;
+  width: 6.2rem;
+}
+
+/*NAV*/
+.navigation {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("ig/hero-img.png");
+  margin-bottom: 9.6rem;
+  justify-content: center;
+}
+
+/*HERO*/
+
+.hero-section {
+  display: grid;
+  background-image: url("ig/hero-img.webp");
   background-size: cover;
-  padding-bottom: 6rem;
   gap: 4.8rem;
-  margin-bottom: 6rem;
+  padding: 2rem 0 7.2rem 0;
   max-width: 100%;
+  justify-items: center;
+  margin-bottom: 6.4rem;
 }
 
 .hero-section h1 {
@@ -71,47 +102,100 @@ html {
   font-weight: 900;
 }
 
-.main-content-box {
-  display: grid;
-  row-gap: 8rem;
-  justify-items: center;
-}
+/*NEIGHBOURHOODS*/
 
 .section-item {
-  padding: 4.2rem;
-  display: grid;
-  max-width: 70%;
-  grid-template-columns: 1fr auto;
-  column-gap: 4.2rem;
+  margin-bottom: 9.6rem;
+  padding: 4.8rem 3.2rem 4.8rem 4.8rem;
   border-radius: 2px;
   box-shadow: 0px 1px 40px 0px rgba(202, 205, 207, 0.5);
 }
 
-.section-item img {
+.section-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-img {
+  max-width: 70%;
+  transition: all 0.4s;
   border-radius: 2px;
-  max-width: 100%;
-  align-self: center;
 }
 
-.section-item h1 {
-  color: #181f24;
-  letter-spacing: -2px;
-  font-size: 8rem;
-  font-weight: 800;
-  padding-bottom: 1.6rem;
+.section-img:hover {
+  transform: scale(1.1);
 }
 
-.section-item-text p {
+.section-item-text-box {
+  max-width: 50rem;
+}
+
+.section-item-text {
   font-size: 1.8rem;
   color: #181f24;
-  letter-spacing: 0.8px;
-  line-height: 1.75;
-  flex-grow: 0 1 auto;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
   padding-bottom: 4.2rem;
 }
 
+/*NEIGHBOURHOODS*
+
+
+*/
 footer {
   font-size: 12px;
   text-align: center;
   padding: 45px;
+}
+
+/*MEDIA QUERIES*/
+
+/*BELOW 1344px [84em*16px] (Smaller Laptop)*/
+
+@media (max-width: 84em) {
+  .container {
+    max-width: 90rem;
+  }
+}
+
+/*BELOW 1072 [67em*16px] (Landscape Tablet Screen)*/
+
+@media (max-width: 67em) {
+  .container {
+    max-width: 80rem;
+  }
+  html {
+    font-size: 60%;
+  }
+  .secondary-heading {
+    font-size: 6rem;
+  }
+}
+
+/*BELOW 768 [48em*16px] (Landscape Tablet Screen)*/
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*BELOW 624 [39em*16px] (Landscape Tablet Screen)*/
+@media (max-width: 39em) {
+  html {
+    font-size: 45%;
+  }
+  .hero-section h1 {
+    letter-spacing: -6px;
+  }
+}
+
+/*BELOW 528 [33em*16px] (Landscape Tablet Screen)*/
+@media (max-width: 33em) {
+  html {
+    font-size: 40%;
+  }
+  .hero-section h1 {
+    letter-spacing: -4px;
+  }
 }
