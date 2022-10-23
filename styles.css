@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  padding-top: 3.3rem;
+  padding-top: 3.2rem;
 }
 
 /*REUSABLE*/
@@ -78,6 +78,10 @@ body {
   max-width: 100%;
   justify-items: center;
   margin-bottom: 6.4rem;
+}
+
+.hero-neukolln {
+  background-image: url("ig/NK-hero.png");
 }
 
 .hero-section h1 {
@@ -237,4 +241,19 @@ footer {
   .hero-section {
     gap: 3.2rem;
   }
+}
+
+.train-info {
+  display: flex;
+  gap: 4px;
+}
+
+.train-info p {
+  font-size: 1.4rem;
+  align-self: center;
+}
+
+.train-info img {
+  height: 24px;
+  align-self: center;
 }
