@@ -156,8 +156,15 @@ p {
 /*NEIGHBOURHOODS**/
 footer {
   font-size: 1.2rem;
-  text-align: center;
-  padding-bottom: 3.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+  display: flex;
+  gap: 4px;
+}
+
+.footer-icon {
+  display: flex;
 }
 
 /*NEUKOLLN*/
@@ -189,7 +196,7 @@ footer {
 .card {
   display: grid;
   flex-direction: row;
-  grid-template-rows: 1fr 1.5fr 0.25fr;
+  grid-template-rows: 1fr 1.15fr 0.25fr;
   padding: 2rem;
   transition: all 0.3s;
   line-height: 1.5;
@@ -210,7 +217,7 @@ footer {
 }
 
 a {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #35454b;
   text-decoration: none;
@@ -242,7 +249,7 @@ a:hover {
 .tertiary-heading {
   color: #181f24;
   letter-spacing: -0.5px;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 800;
   text-overflow: ellipsis;
   letter-spacing: 0.9px;
@@ -254,6 +261,7 @@ a:hover {
   font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: 0.9px;
+  max-width: 65vw;
   padding: 3.2rem 4.8rem 6.2rem 4.8rem;
 }
 
