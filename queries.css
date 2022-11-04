@@ -22,7 +22,7 @@
 
 @media (max-width: 67em) {
   html {
-    font-size: 60%;
+    font-size: 55%;
   }
   .container {
     max-width: 80rem;
@@ -40,8 +40,11 @@
     max-width: 100rem;
     margin: 0 auto;
   }
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
   .card {
-    grid-template-rows: 1fr 1.5fr 0.25fr;
+    grid-template-rows: 0.85fr 2fr 0.25fr;
   }
 }
 
