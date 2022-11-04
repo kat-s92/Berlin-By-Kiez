@@ -1,8 +1,8 @@
 /*MEDIA QUERIES*/
 
-/*BELOW 1424px [89em*16px] (Smaller Laptop [macbook air])*/
+/*BELOW 1440px [89em*16px] (Smaller Laptop [macbook air])*/
 
-@media (max-width: 89em) {
+@media (max-width: 90em) {
   .gallery-container {
     max-width: 120rem;
   }
@@ -14,7 +14,7 @@
     grid-template-rows: repeat(2, 1fr);
   }
   .card {
-    grid-template-rows: 1fr 1.25fr 0.15fr;
+    grid-template-rows: 1fr 1.45fr 0.25fr;
   }
 }
 
