@@ -18,12 +18,10 @@ body {
 .grid {
   display: grid;
 }
-
 .container {
   max-width: 100rem;
   margin: 0 auto;
 }
-
 .gallery-container {
   margin: 0 auto;
   padding: 3.2rem;
@@ -41,7 +39,6 @@ body {
   row-gap: 3.2rem;
   column-gap: 4rem;
 }
-
 .btn {
   text-transform: uppercase;
   background-color: #35454b;
@@ -58,7 +55,20 @@ body {
   background-color: #546c75;
   color: white;
 }
-
+a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #35454b;
+  text-decoration: none;
+}
+a:hover {
+  /* box-shadow: inset 285px 0 0 0 #35454b;
+  color: white;
+  padding: 4px;
+  border-radius: 2px; */
+  color: #181f24;
+  font-weight: 700;
+}
 .secondary-heading {
   color: #181f24;
   letter-spacing: -2px;
@@ -68,184 +78,6 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
-p {
-  color: #181f24;
-}
-/*NAV*/
-.navigation {
-  display: flex;
-  margin-bottom: 9.6rem;
-  justify-content: center;
-}
-
-/*HERO*/
-
-.hero-section {
-  display: grid;
-  background-image: url("ig/hero-img.webp");
-  background-size: cover;
-  gap: 4.8rem;
-  padding: 2rem 0 7.2rem 0;
-  max-width: 100%;
-  justify-items: center;
-  margin-bottom: 6.4rem;
-}
-
-.hero-section h1 {
-  font-size: 12.8rem;
-  color: #181f24;
-  font-weight: 900;
-  letter-spacing: -8px;
-}
-
-.hero-section p {
-  background-image: none;
-  line-height: 1.5;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.9px;
-  max-width: 50vw;
-}
-
-.kiez {
-  align-self: flex-start;
-  font-size: 2.4rem;
-  font-weight: 900;
-}
-
-/*NEIGHBOURHOODS*/
-
-.section-item {
-  margin-bottom: 9.6rem;
-  padding: 4.8rem 4.8rem 4.8rem 4.8rem;
-  border-radius: 2px;
-  box-shadow: 0px 1px 40px 0px rgba(202, 205, 207, 0.5);
-}
-
-.section-img-box {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-.section-img {
-  max-width: 90%;
-  transition: all 0.4s;
-  border-radius: 2px;
-}
-
-.section-img:hover {
-  transform: scale(1.1);
-}
-
-.section-item-text {
-  font-size: 1.8rem;
-  color: #181f24;
-  letter-spacing: 0.6px;
-  line-height: 1.5;
-  padding-bottom: 2.4rem;
-}
-
-.PS {
-  font-size: 1.6rem;
-  line-height: 1;
-  background-color: white;
-}
-
-/*NEIGHBOURHOODS**/
-footer {
-  font-size: 1.2rem;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3.2rem;
-  display: flex;
-  gap: 4px;
-}
-
-.footer-icon {
-  display: flex;
-}
-
-/*NEUKOLLN*/
-
-.hero-neukolln {
-  background-image: url("ig/NK-hero.png");
-  gap: 4rem;
-}
-
-.train-info {
-  gap: 6px;
-  display: grid;
-}
-.train-info p {
-  font-size: 1.4rem;
-}
-
-.u-bahn-info,
-.s-bahn-info {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-}
-
-.train-info img {
-  height: 24px;
-}
-
-.card {
-  display: grid;
-  flex-direction: row;
-  grid-template-rows: 1fr 1.15fr 0.25fr;
-  padding: 2rem;
-  transition: all 0.3s;
-  line-height: 1.5;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1;
-}
-
-.card:hover {
-  box-shadow: 0px 5px 80px 0px rgba(97, 97, 97, 0.1);
-}
-
-.address {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  transition: all 0.3s;
-}
-
-a {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #35454b;
-  text-decoration: none;
-}
-
-a:hover {
-  /* box-shadow: inset 285px 0 0 0 #35454b;
-  color: white;
-  padding: 4px;
-  border-radius: 2px; */
-  color: #181f24;
-  font-weight: 700;
-}
-
-.card-img {
-  width: 100%;
-  border-radius: 2px;
-  display: block;
-}
-
-.card-text-box {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  padding: 2.4rem 1rem 1rem 1.2rem;
-  letter-spacing: 0.4px;
-}
-
 .tertiary-heading {
   color: #181f24;
   letter-spacing: -0.5px;
@@ -254,21 +86,29 @@ a:hover {
   text-overflow: ellipsis;
   letter-spacing: 0.9px;
 }
-
-.kiez-intro {
-  margin: 0 auto;
-  line-height: 1.5;
-  font-size: 1.8rem;
-  font-weight: 400;
-  letter-spacing: 0.9px;
-  max-width: 65vw;
-  padding: 3.2rem 4.8rem 6.2rem 4.8rem;
+p {
+  color: #181f24;
+}
+footer {
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 4px;
 }
 
-.location-icon {
-  font-size: 2.4rem;
+.footer-icon {
+  display: flex;
 }
 
+/*NAV*/
+.navigation {
+  display: flex;
+  margin-bottom: 9.6rem;
+  justify-content: center;
+}
 .sticky-nav .header {
   position: fixed;
   top: 0;
@@ -283,4 +123,140 @@ a:hover {
 }
 .sticky-nav .hero {
   margin-top: 120px;
+}
+
+/*HERO*/
+
+.hero-section {
+  display: grid;
+  background-image: url("ig/hero-img.webp");
+  background-size: cover;
+  gap: 4.8rem;
+  padding: 2rem 0 7.2rem 0;
+  max-width: 100%;
+  justify-items: center;
+  margin-bottom: 6.4rem;
+}
+.hero-section h1 {
+  font-size: 12.8rem;
+  color: #181f24;
+  font-weight: 900;
+  letter-spacing: -8px;
+}
+.hero-section p {
+  background-image: none;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  max-width: 50vw;
+}
+.PS {
+  font-size: 1.6rem;
+  line-height: 1;
+  background-color: white;
+}
+.kiez {
+  align-self: flex-start;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+/*NEIGHBOURHOODS*/
+.section-item {
+  margin-bottom: 9.6rem;
+  padding: 4.8rem 4.8rem 4.8rem 4.8rem;
+  border-radius: 2px;
+  box-shadow: 0px 1px 40px 0px rgba(202, 205, 207, 0.5);
+}
+.section-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.section-img {
+  max-width: 90%;
+  transition: all 0.4s;
+  border-radius: 2px;
+}
+.section-img:hover {
+  transform: scale(1.1);
+}
+.section-item-text {
+  font-size: 1.8rem;
+  color: #181f24;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+  padding-bottom: 2.4rem;
+}
+/*NEIGHBOURHOODS**/
+
+/*KIEZ GENERAL*/
+
+.kiez-intro {
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  max-width: 65vw;
+  padding: 3.2rem 4.8rem 6.2rem 4.8rem;
+}
+.train-info {
+  gap: 6px;
+  display: grid;
+}
+.train-info p {
+  font-size: 1.4rem;
+}
+.u-bahn-info,
+.s-bahn-info {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.train-info img {
+  height: 24px;
+}
+.card {
+  display: grid;
+  flex-direction: row;
+  grid-template-rows: 1fr 1.15fr 0.25fr;
+  padding: 2rem;
+  transition: all 0.3s;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1;
+}
+.card:hover {
+  box-shadow: 0px 5px 80px 0px rgba(97, 97, 97, 0.1);
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s;
+}
+.card-img {
+  width: 100%;
+  border-radius: 2px;
+  display: block;
+}
+.card-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2.4rem 1rem 1rem 1.2rem;
+  letter-spacing: 0.4px;
+}
+.location-icon {
+  font-size: 2.4rem;
+}
+
+/*NEUKOLLN*/
+
+.hero-neukolln {
+  background-image: url("ig/NK-hero.png");
+  gap: 4rem;
 }
