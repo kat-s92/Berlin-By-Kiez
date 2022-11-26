@@ -17,3 +17,13 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(heroSectionEl);
+
+// LIKE BUTTON
+
+const likeBtn = document.querySelector(".button-like");
+let counter = 0;
+
+likeBtn.addEventListener("click", function () {
+  increaseCounter = counter++;
+  document.querySelector(".count-number").textContent = increaseCounter;
+});
