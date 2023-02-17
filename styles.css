@@ -122,7 +122,7 @@ footer {
 .like--button {
   display: flex;
   flex-direction: row-reverse;
-  padding: 1rem 2rem 0 0;
+  padding: 2rem 2rem 0 0;
 }
 .heart {
   font-size: 1.8rem;
@@ -284,4 +284,61 @@ footer {
 .hero-neukolln {
   background-image: url("ig/NK-hero.png");
   gap: 4rem;
+}
+
+.hero-kreuzberg {
+  background-image: url("ig/kz-hero.png");
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.carousel-card {
+  max-width: 640px;
+  max-height: 420px;
+  background-color: green;
+}
+
+.view-port {
+  /* background-color: red; */
+  max-width: 640px;
+  max-height: 420px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  margin-bottom: 4.8rem;
+}
+
+#prev {
+  top: 50%;
+  left: 5px;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #ffffffe0;
+  border-radius: 4px;
+}
+
+#next {
+  top: 50%;
+  position: absolute;
+  right: 5px;
+  z-index: 1;
+  transform: translateY(-50%);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #ffffffe0;
+  border-radius: 4px;
+}
+
+ion-icon {
+  font-size: 2.8rem;
 }

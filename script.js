@@ -27,3 +27,32 @@ likeBtn.addEventListener("click", function () {
   increaseCounter = counter++;
   document.querySelector(".count-number").textContent = increaseCounter;
 });
+
+
+const next = document.getElementById('next');
+const prev = document.getElementById("prev");
+const images = document.querySelector(".carousel-container");
+
+let currentCard = 0;
+
+next.addEventListener("click", () => {
+  if (currentCard < images.children.length -1)
+{currentCard++;
+  images.style.transitionDuration = "0.9s";
+images.style.transform = `translate(-${currentCard * 640}px)`;
+}
+else {
+  return;
+}
+});
+
+prev.addEventListener("click", () => {
+  if (currentCard > 0)
+{currentCard--;
+  images.style.transitionDuration = "0.9s";
+images.style.transform = `translate(-${currentCard * 640}px)`;
+}
+else {
+  return;
+}
+});
