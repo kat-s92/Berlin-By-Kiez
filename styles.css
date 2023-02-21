@@ -290,20 +290,19 @@ footer {
   background-image: url("ig/kz-hero.png");
 }
 
-.carousel-container {
+/* .carousel-container {
   display: flex;
   flex-direction: row;
   width: fit-content;
 }
 
-.carousel-card {
+.carousel-card img {
   max-width: 640px;
   max-height: 420px;
-  background-color: green;
+  /* background-color: green;
 }
 
 .view-port {
-  /* background-color: red; */
   max-width: 640px;
   max-height: 420px;
   overflow: hidden;
@@ -311,7 +310,94 @@ footer {
   position: relative;
   display: flex;
   margin-bottom: 4.8rem;
+} */
+
+/* body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #23E3C9;
+} */
+
+.slider {
+  display: flex;
+  width: 640px;
+  height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 4rem auto;
 }
+
+.slides {
+  width: fit-content;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.carousel-card {
+  width: 20%;
+  transition: all 0.9s;
+}
+
+/* .slide img{
+  max-width: 640px;
+  max-height: 420px;
+} */
+
+.navigation-manual {
+  position: absolute;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.9s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: black;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
+
+/* css for automatic navigation
+ */
 
 #prev {
   top: 50%;

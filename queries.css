@@ -166,8 +166,8 @@
     margin-bottom: 0;
   }
   .view-port {
-    max-width: 480px;
-    max-height: 315px;
+    width: 380px;
+    height: 260px;
   }
 }
 
@@ -220,7 +220,7 @@
     font-size: 13px;
   }
   .view-port {
-    max-width: 120px;
-    max-height: 80px;
+    width: 320px;
+    height: 210px;
   }
 }
