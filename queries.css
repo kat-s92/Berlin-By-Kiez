@@ -16,13 +16,20 @@
   .card {
     grid-template-rows: 1fr 1.45fr 0.25fr;
   }
+  .carousel-track-container {
+    height: 52rem;
+    width: 80%;
+  }
 }
 
-/*BELOW 1072 [67em*16px] (Landscape Tablet Screen)*/
+/*BELOW 1089 [67em*16px] (Landscape Tablet Screen)*/
 
-@media (max-width: 67em) {
+@media (max-width: 69em) {
   html {
     font-size: 55%;
+  }
+  .header {
+    padding-top: 2rem;
   }
   .container {
     max-width: 80rem;
@@ -46,9 +53,15 @@
   .card {
     grid-template-rows: 0.85fr 2fr 0.25fr;
   }
+  .carousel-track-container {
+    height: 42rem;
+  }
+  .header {
+    padding-top: 2.4rem;
+  }
 }
 
-/*BELOW 992 [48em*16px] (Landscape Tablet Screen)*/
+/*BELOW 978 [48em*16px] (Landscape Tablet Screen)*/
 @media (max-width: 62em) {
   html {
     font-size: 55%;
@@ -56,12 +69,19 @@
   .card {
     grid-template-rows: 1fr 1.65fr 0.25fr;
   }
+  .carousel-track-container {
+    height: 40rem;
+    width: 80%;
+  }
 }
 
 /*BELOW 768 [48em*16px] (Landscape Tablet Screen)*/
 @media (max-width: 48em) {
   html {
-    font-size: 45%;
+    font-size: 48%;
+  }
+  .navigation {
+    margin-bottom: 6.6rem;
   }
   .gallery-container {
     max-width: 95rem;
@@ -73,10 +93,17 @@
   .grid--4--cols {
     column-gap: 1.2rem;
   }
+  .carousel-track-container {
+    height: 38rem;
+    width: 80%;
+  }
 }
 
 /*BELOW 624 [39em*16px] (Landscape Tablet Screen)*/
 @media (max-width: 39em) {
+  .navigation {
+    margin-bottom: 5.8rem;
+  }
   .container {
     max-width: 65rem;
   }
@@ -87,11 +114,20 @@
   .train-info img {
     height: 16px;
   }
+
+  .hero-section {
+    margin-bottom: 4.6rem;
+  }
+
   .hero-section,
   .hero-neukolln h1 {
     letter-spacing: -6px;
     font-size: 11rem;
   }
+  .section-item {
+    margin-bottom: 4.6rem;
+  }
+
   .grid--4--cols {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
@@ -120,9 +156,8 @@
   a {
     font-size: 1.8rem;
   }
-  .view-port {
-    max-width: 512px;
-    max-height: 336px;
+  .carousel-track-container {
+    height: 36rem;
   }
 }
 
@@ -165,14 +200,16 @@
   .kiez-intro {
     margin-bottom: 0;
   }
-  .view-port {
-    width: 380px;
-    height: 260px;
-  }
 }
 
 /*BELOW 380 [20em*16px] (Landscape Tablet Screen)*/
 @media (max-width: 23em) {
+  .navigation {
+    margin-bottom: 4.2rem;
+  }
+  .header {
+    padding-top: 2.8rem;
+  }
   .hero-section h1,
   .hero-neukolln h1 {
     letter-spacing: -4px;
@@ -219,8 +256,17 @@
   .address a {
     font-size: 13px;
   }
-  .view-port {
-    width: 320px;
-    height: 210px;
+  .carousel-track-container {
+    height: 28rem;
+  }
+  .section-img-box {
+    justify-content: center;
+  }
+  .section-item {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(134, 130, 130, 0.249);
+  }
+  .section-item:last-child {
+    border-bottom: none;
   }
 }
