@@ -73,6 +73,9 @@
     height: 40rem;
     width: 80%;
   }
+  .navigation .btn {
+    /* padding: 2.4rem; */
+  }
 }
 
 /*BELOW 768 [48em*16px] (Landscape Tablet Screen)*/
@@ -208,7 +211,7 @@
     margin-bottom: 4.2rem;
   }
   .header {
-    padding-top: 2.8rem;
+    padding-top: 0;
   }
   .hero-section h1,
   .hero-neukolln h1 {
@@ -257,7 +260,8 @@
     font-size: 13px;
   }
   .carousel-track-container {
-    height: 28rem;
+    height: 30rem;
+    width: 85%;
   }
   .section-img-box {
     justify-content: center;
@@ -268,5 +272,8 @@
   }
   .section-item:last-child {
     border-bottom: none;
+  }
+  .carousel-nav {
+    display: none;
   }
 }

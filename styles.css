@@ -45,7 +45,7 @@ body {
   text-decoration: none;
   font-weight: 400;
   border-radius: 2px;
-  padding: 1.8rem;
+  padding: 2.4rem;
   font-size: 2rem;
   display: inline-block;
 }
@@ -293,7 +293,9 @@ footer {
 }
 
 /*KREUZBERG - PHOTO SLIDER*/
-
+.carousel {
+  padding: 2rem 0 4.6rem 0;
+}
 .carousel-track-container {
   /* background: lightcoral; */
   margin: 0 auto;
