@@ -65,76 +65,63 @@
       </p>
     </section>
 
-    <div class="slider">
-      <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1" />
-        <input type="radio" name="radio-btn" id="radio2" />
-        <input type="radio" name="radio-btn" id="radio3" />
-        <input type="radio" name="radio-btn" id="radio4" />
-        <input type="radio" name="radio-btn" id="radio5" />
-        <input type="radio" name="radio-btn" id="radio6" />
-        <div class="carousel-card first">
-          <img
-            src="ig/copies of B&W pics for website/R1-01698-0018 copy.JPG"
-            alt=""
-          />
-        </div>
-        <div class="carousel-card">
-          <img
-            src="ig/copies of B&W pics for website/R1-01698-0020 copy.JPG"
-            alt=""
-          />
-        </div>
-        <div class="carousel-card">
-          <img src="ig/copies of B&W pics for website/R1-01698-0021 copy.JPG" />
-        </div>
-        <div class="carousel-card">
-          <img src="ig/copies of B&W pics for website/R1-01698-0023 copy.JPG" />
-        </div>
-        <div class="carousel-card">
-          <img src="ig/copies of B&W pics for website/R1-01698-0025 copy.JPG" />
-        </div>
-        <div class="carousel-card">
-          <img src="ig/copies of B&W pics for website/R1-01698-0014 copy.JPG" />
-        </div>
-
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn5"></div>
-          <div class="auto-btn6"></div>
-        </div>
+    <div class="carousel">
+      <!-- <button class="carousel-button carousel-button--left">
+        <ion-icon
+          name="chevron-back-outline"
+          class="slider-nav-icon"
+        ></ion-icon>
+      </button> -->
+      <div class="carousel-track-container">
+        <img
+          class="carousel-img"
+          src="ig/b_w_large/copy_large_img4.JPG"
+          alt=""
+        />
+        <img
+          class="carousel-img"
+          src="ig/b_w_large/copy_large_img1.JPG"
+          alt=""
+        />
+        <img
+          class="carousel-img"
+          src="ig/b_w_large/copy_large_img5.JPG"
+          alt=""
+        />
+        <img
+          class="carousel-img"
+          src="ig/b_w_large/copy_large_img2.JPG"
+          alt=""
+        />
+        <img
+          class="carousel-img"
+          src="ig/b_w_large/copy_large_img3.JPG"
+          alt=""
+        />
       </div>
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-        <label for="radio5" class="manual-btn"></label>
-        <label for="radio6" class="manual-btn"></label>
+      <!-- <button class="carousel-button carousel-button--right">
+        <ion-icon
+          name="chevron-forward-outline"
+          class="slider-nav-icon"
+        ></ion-icon>
+      </button> -->
+
+      <div class="carousel-nav">
+        <button
+          onclick="changeSlide(0)"
+          class="carousel-nav-btn current-dot"
+        ></button
+        ><button onclick="changeSlide(1)" class="carousel-nav-btn"></button
+        ><button onclick="changeSlide(2)" class="carousel-nav-btn"></button
+        ><button onclick="changeSlide(3)" class="carousel-nav-btn"></button
+        ><button onclick="changeSlide(4)" class="carousel-nav-btn"></button>
       </div>
     </div>
 
-    <!-- <div class="view-port">
-      <button id="prev">
-        <ion-icon name="caret-back-outline" class="btn-prev-next"></ion-icon>
-      </button>
-      <button id="next">
-        <ion-icon name="caret-forward-outline" class="btn-prev-next"></ion-icon>
-      </button>
-      <section class="carousel-container"></section>
-    </div> -->
-
-    <script defer src="/script.js"></script>
+    <script defer src="/test.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>
