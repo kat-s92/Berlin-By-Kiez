@@ -31,9 +31,9 @@ likeBtn.addEventListener("click", function () {
 // CAROUSEL
 
 var imgs = document.querySelectorAll('.carousel-track-container img');
-console.log(imgs)
+// console.log(imgs)
 var dots = document.querySelectorAll('.carousel-nav-btn');
-console.log(dots)
+// console.log(dots)
 var currentImg = 0;
 const interval = 9000;
 var timer = setInterval(changeSlide, interval);
@@ -47,9 +47,9 @@ function changeSlide(n) {
   currentImg = (currentImg + 1) % imgs.length; // update the index number
 
   if (n != undefined) {
-      clearInterval(timer);
-      timer = setInterval(changeSlide, interval);
-      currentImg = n;
+    clearInterval(timer);
+    timer = setInterval(changeSlide, interval);
+    currentImg = n;
   }
 
   imgs[currentImg].style.opacity = 1;
