@@ -287,6 +287,11 @@
   .section-btn {
     margin-top: 3rem;
     grid-row: 3;
+    padding: 1.8rem;
+  }
+  .btn.section--btn {
+    font-size: 2.6rem;
+    padding: 2.8rem;
   }
 
   .secondary-heading {
