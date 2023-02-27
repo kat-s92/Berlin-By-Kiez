@@ -213,7 +213,7 @@
   .hero-section h1,
   .hero-neukolln h1 {
     letter-spacing: -4px;
-    font-size: 8rem;
+    font-size: 8.6rem;
   }
   .hero-section p {
     max-width: 85vw;
@@ -226,9 +226,9 @@
   .hero-section {
     gap: 3.2rem;
   }
-  .container {
+  /* .container {
     max-width: 85vw;
-  }
+  } */
   .u-bahn-info p,
   .s-bahn-info p {
     font-size: 1.75rem;
