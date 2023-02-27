@@ -5,7 +5,6 @@ const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     if (ent.isIntersecting === false)
-    elseif (heroWidth >= 368)
     {
       document.body.classList.add("sticky-nav");
     }
@@ -13,10 +12,14 @@ const obs = new IntersectionObserver(
     if (ent.isIntersecting === true) {
       document.body.classList.remove("sticky-nav");
     }
+    if (heroWidth < 368) {
+      console.log(ent.target)
+      obs.unobserve(ent.target);
+    }
   },
   {
     root: null, //in the viewport, null=viewport
-    threshold: 0, //will fire one hero-section is 0% in the view port, ie none
+    threshold: 0, //will fire when hero-section is 0% in the view port, ie none
     rootMargin: "-144px",
   }
 );
