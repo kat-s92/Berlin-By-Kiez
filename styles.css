@@ -53,6 +53,7 @@ body {
 .btn:hover {
   background-color: #546c75;
   color: white;
+  font-weight: 500;
 }
 a {
   font-size: 1.8rem;
@@ -204,9 +205,7 @@ footer {
   transition: all 0.4s;
   border-radius: 2px;
 }
-.section-img:hover {
-  transform: scale(1.1);
-}
+
 .section-item-text {
   font-size: 1.8rem;
   color: #181f24;
@@ -343,4 +342,57 @@ footer {
 .carousel-nav-btn.current-dot {
   background: rgba(0, 0, 0, 0.869);
   border-radius: 50%;
+}
+
+.test-section-item {
+  /* display: grid; */
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 6rem;
+  border: 1px solid black;
+  margin-bottom: 9.6rem;
+  padding: 4.8rem 4.8rem 4.8rem 4.8rem;
+  border-radius: 2px;
+  box-shadow: 0px 1px 40px 0px rgba(202, 205, 207, 0.5);
+}
+
+.test-section-item-text-box {
+}
+
+.test-secondary-heading {
+  font-size: 8rem;
+}
+
+.test-section-item-text {
+  font-size: 1.8rem;
+  color: #181f24;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+  padding-bottom: 2.4rem;
+}
+
+.test-btn {
+  text-transform: uppercase;
+  background-color: #35454b;
+  color: #e9ecef;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 2px;
+  padding: 2.4rem;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.test-section-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.test-section-img {
+  max-width: 90%;
+  transition: all 0.4s;
+  border-radius: 2px;
+}
+
+.test-section-btn {
 }

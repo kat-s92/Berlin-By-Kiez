@@ -247,6 +247,9 @@
   .tertiary-heading {
     font-size: 4.5rem;
   }
+  .secondary-heading {
+    font-size: 8.6rem;
+  }
   .card-text-box {
     gap: 1.8rem;
     padding: 2.4rem 1rem 1rem 1.2rem;
@@ -260,17 +263,36 @@
     height: 30rem;
     width: 85%;
   }
-  .section-img-box {
+  .section-img-box:nth-child(2) {
     justify-content: center;
+    grid-row: 2;
   }
   .section-item {
     box-shadow: none;
     border-bottom: 1px solid rgba(134, 130, 130, 0.249);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
   }
+  .section-item-text-box {
+    padding-bottom: 1.2rem;
+  }
+
   .section-item:last-child {
     border-bottom: none;
   }
   .carousel-nav {
     display: none;
+  }
+
+  .section-btn {
+    margin-top: 3rem;
+    grid-row: 3;
+  }
+
+  .secondary-heading {
+    text-align: center;
+  }
+  .section-img {
+    max-width: 100%;
   }
 }
