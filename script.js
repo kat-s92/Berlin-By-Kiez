@@ -1,8 +1,12 @@
 const heroSectionEl = document.querySelector(".hero");
+const heroWidth = heroSectionEl.offsetWidth
+console.log(heroWidth)
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    if (ent.isIntersecting === false) {
+    if (ent.isIntersecting === false)
+    elseif (heroWidth >= 368)
+    {
       document.body.classList.add("sticky-nav");
     }
 
@@ -28,13 +32,13 @@ likeBtn.addEventListener("click", function () {
   document.querySelector(".count-number").textContent = increaseCounter;
 });
 
-// CAROUSEL
+// CAROUSELs
 
 var imgs = document.querySelectorAll('.carousel-track-container img');
 // console.log(imgs)
 var dots = document.querySelectorAll('.carousel-nav-btn');
 // console.log(dots)
-var currentImg = 0;
+let currentImg = 0;
 const interval = 9000;
 var timer = setInterval(changeSlide, interval);
 
