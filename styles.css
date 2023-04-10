@@ -43,32 +43,19 @@ body {
   text-transform: uppercase;
   background-color: #35454b;
   color: #e9ecef;
-  text-decoration: none;
-  font-weight: 400;
   border-radius: 2px;
-  padding: 2.4rem;
-  font-size: 2rem;
-  display: inline-block;
+  padding: 2rem 2.8rem;
+  font-size: 1.6rem;
 }
-
 .btn:hover {
   background-color: #546c75;
   color: white;
-  font-weight: 500;
 }
 a {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #35454b;
+  font-size: 2rem;
+  font-weight: 500;
   text-decoration: none;
-}
-a:hover {
-  /* box-shadow: inset 285px 0 0 0 #35454b;
-  color: white;
-  padding: 4px;
-  border-radius: 2px; */
-  color: #181f24;
-  font-weight: 700;
+  /* color: #35454b; */
 }
 .secondary-heading {
   color: #181f24;
@@ -76,15 +63,12 @@ a:hover {
   font-size: 8rem;
   font-weight: 800;
   padding-bottom: 1.6rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .tertiary-heading {
   color: #181f24;
-  letter-spacing: -0.5px;
+  letter-spacing: -px;
   font-size: 2.8rem;
   font-weight: 800;
-  text-overflow: ellipsis;
   letter-spacing: 0.9px;
 }
 p {
@@ -124,7 +108,7 @@ footer {
 .like--button {
   display: flex;
   flex-direction: row-reverse;
-  padding: 2rem 2rem 0 0;
+  padding: 4rem 4rem 0 0;
 }
 .heart {
   font-size: 1.8rem;
@@ -155,14 +139,16 @@ footer {
 /*HERO*/
 
 .hero-section {
-  display: grid;
-  background-image: url("ig/hero-img.webp");
   background-size: cover;
   gap: 4.8rem;
-  padding: 2rem 0 7.2rem 0;
-  max-width: 100%;
-  justify-items: center;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 6.4rem;
+  padding-bottom: 4rem;
 }
 .hero-section h1 {
   font-size: 12.8rem;
@@ -171,7 +157,6 @@ footer {
   letter-spacing: -8px;
 }
 .hero-section p {
-  background-image: none;
   line-height: 1.5;
   font-size: 2rem;
   font-weight: 400;
@@ -191,28 +176,40 @@ footer {
 
 /*NEIGHBOURHOODS*/
 .section-item {
-  margin-bottom: 9.6rem;
-  padding: 4.8rem 4.8rem 4.8rem 4.8rem;
+  margin-bottom: 4.6rem;
+  padding: 4.2rem;
   border-radius: 2px;
+  column-gap: 4rem;
   box-shadow: 0px 1px 40px 0px rgba(202, 205, 207, 0.5);
 }
+.section-img-box {
+  display: flex;
+  justify-content: center;
+}
 .section-img {
-  align-self: flex-start;
+  object-fit: cover;
   max-width: 90%;
   transition: all 0.4s;
   border-radius: 2px;
 }
 
-.section-btn {
-  grid-column: 1;
+.section--btn {
+  align-self: baseline;
+  padding: 1.4rem 2.2rem;
+  font-size: 1.6rem;
 }
-
 .section-item-text {
   font-size: 1.8rem;
   color: #181f24;
   letter-spacing: 0.6px;
   line-height: 1.5;
   padding-bottom: 2.4rem;
+}
+.section-item-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
 }
 /*NEIGHBOURHOODS**/
 
@@ -246,27 +243,35 @@ footer {
 .card {
   display: grid;
   flex-direction: row;
-  grid-template-rows: 1fr 1.15fr 0.25fr;
-  padding: 2rem;
+  padding: 3.2rem;
   transition: all 0.3s;
   line-height: 1.5;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1px;
+  background-color: white;
+  box-shadow: 0px 10px 30px 4px rgba(122, 121, 121, 0.08);
 }
-.card:hover {
-  box-shadow: 0px 5px 80px 0px rgba(97, 97, 97, 0.1);
-}
+
 .address {
   display: flex;
   align-items: center;
   gap: 4px;
   transition: all 0.3s;
 }
+.address a {
+  color: #35454b;
+  font-size: 2rem;
+}
+.address a:hover {
+  font-weight: 700;
+}
+
 .card-img {
   width: 100%;
   border-radius: 2px;
   display: block;
+  object-fit: cover;
 }
 .card-text-box {
   display: flex;
@@ -297,7 +302,6 @@ footer {
   padding: 2rem 0 4.6rem 0;
 }
 .carousel-track-container {
-  /* background: lightcoral; */
   margin: 0 auto;
   width: 60%;
   position: relative;
@@ -343,57 +347,4 @@ footer {
 .carousel-nav-btn.current-dot {
   background: rgba(0, 0, 0, 0.869);
   border-radius: 50%;
-}
-
-.test-section-item {
-  /* display: grid; */
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 6rem;
-  border: 1px solid black;
-  margin-bottom: 9.6rem;
-  padding: 4.8rem 4.8rem 4.8rem 4.8rem;
-  border-radius: 2px;
-  box-shadow: 0px 1px 40px 0px rgba(202, 205, 207, 0.5);
-}
-
-.test-section-item-text-box {
-}
-
-.test-secondary-heading {
-  font-size: 8rem;
-}
-
-.test-section-item-text {
-  font-size: 1.8rem;
-  color: #181f24;
-  letter-spacing: 0.6px;
-  line-height: 1.5;
-  padding-bottom: 2.4rem;
-}
-
-.test-btn {
-  text-transform: uppercase;
-  background-color: #35454b;
-  color: #e9ecef;
-  text-decoration: none;
-  font-weight: 400;
-  border-radius: 2px;
-  padding: 2.4rem;
-  font-size: 2rem;
-  display: inline-block;
-}
-
-.test-section-img-box {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-.test-section-img {
-  max-width: 90%;
-  transition: all 0.4s;
-  border-radius: 2px;
-}
-
-.test-section-btn {
 }
